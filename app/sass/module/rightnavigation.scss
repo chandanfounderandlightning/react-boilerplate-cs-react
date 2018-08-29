@@ -1,0 +1,64 @@
+@import '../../sass/style.scss';
+
+.main_right_navigation {
+  @include flex;
+}
+
+.main_right_navigation li {
+  &:last-child {
+    a {
+      padding-right: 0;
+    }
+  }
+}
+
+.main_right_navigation li a {
+  color: $white-color;
+  font-size: 12px;
+  padding: 7px 2px 4px;
+  text-align: center;
+  font-weight: 500;
+  @include flex;
+  flex-wrap: wrap;
+  width: $full-width;
+  position: relative;
+  height: $full-width;
+
+  &:hover {
+
+    &:after {
+      background-color: $white-color;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 0;
+      margin: 0 auto;
+      right: 0;
+      width: 98%;
+      position: absolute;
+    }
+  }
+
+  .nav_name {
+    align-self: flex-end;
+    width: $full-width;
+  }
+}
+
+.profile_dropdown {
+  background-image: url('../../images/user-img.jpg');
+  @include background-set;
+  border-radius: 2px;
+  height: 24px;
+  margin: 0 auto;
+  width: 24px;
+}
+
+.main_right_navigation .nav_icon {
+  width: $full-width;
+  align-self: flex-start;
+}
+
+.rightnavigation_column {
+  align-self: center;
+}

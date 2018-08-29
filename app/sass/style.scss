@@ -1,3 +1,79 @@
+@import '/_breakpoints.scss';
+
+$base-color: #212121;
+$blue-color: #0d47a1;
+$white-color: #fff;
+$base-font: 14px;
+$margin-none: 0;
+$full-width: 100%;
+
+@mixin basic-font {
+  font-family: 'Mada', sans-serif;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin basic_ul_style {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+ul {
+  @include basic_ul_style;
+}
+
+@mixin background-set {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-color;
+  outline: none;
+}
+
 body {
-    background-color: red;
+  background-color: darken($white-color, 3.5%);
+  font-size: $base-font;
+  color: $base-color;
+  @include basic-font;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+  @include flex;
+  padding: 0 15px;
+
+  @media (max-width: $tabletLandscapeDown) {
+    width: $tabletPortraitDown;
+  }
+
+  @media (max-width: $tabletPortraitDown) {
+    width: 768px;
+  }
+
+  @media (max-width: $phoneLandscapeDown) {
+    width: $full-width;
+  }
+}
+
+h1 {
+  margin: $margin-none;
+}
+
+.header_navigation_row {
+  @include flex;
+  width: $full-width;
+  height: 54px;
+  justify-content: space-between;
 }

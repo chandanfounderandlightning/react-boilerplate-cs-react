@@ -1,0 +1,19 @@
+@import '../../sass/style.scss';
+
+header {
+  background: $base-color;
+}
+
+.leftnav_icon {
+  @include text-center;
+}
+
+.left_nav {
+  align-self: center;
+}
+
+.left_nav li a {
+  color: $white-color;
+  font-size: 12px;
+  font-weight: 500;
+}

@@ -1,0 +1,63 @@
+@import '../../sass/style.scss';
+@import '../../sass/_breakpoints.scss';
+
+.banner_row {
+  @include flex;
+  min-height: 104px;
+  @include background-set;
+  background-image: url('../../images/banner-img.png');
+  width: $full-width;
+}
+
+.banner_part {
+  width: $full-width;
+  position: relative;
+  @include flex;
+}
+
+.space_pic_wrap {
+  margin-right: 18px;
+  width: 75px;
+  span {
+     background-color: $white-color;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     border: 2px solid $white-color;
+     border-radius: 50%;
+     box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.3);
+     position: absolute;
+     
+  }
+}
+
+.left_share_img {
+  background-image: url('../../images/bharti-airtel-squarelogo.png');
+  height: 36px;
+  width: 36px;
+  top: 15px;
+  left: 0;
+}
+
+.right_share_img {
+  background-image: url('../../images/vodafone-squarelogo.png');
+  height: 44px;
+  left: 28px;
+  top: 10px;
+  width: 44px;
+}
+
+.share_name {
+  h3 {
+    color: $white-color;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.edit_share_name {
+  display: inline-flex;
+  margin: 0 0 0 10px;
+}
