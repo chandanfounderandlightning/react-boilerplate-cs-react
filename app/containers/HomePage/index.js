@@ -14,6 +14,7 @@ import 'sass/style.scss';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import HeaderContainer from '../HeaderContainer/index';
+import MainContent from '../MainContent/index';
 import Banner from '../../components/Banner';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -25,6 +26,7 @@ export default class HomePage extends React.PureComponent {
           <HeaderContainer />
         </header>
         <Banner />
+        <MainContent />
       </React.Fragment>
     );
   }

@@ -1,0 +1,57 @@
+@import '../../sass/style.scss';
+
+.member_col {
+  margin: 16px 0 0;
+  @include flex;
+  text-align: center;
+}
+
+.client_pic {
+  @include flex;
+  width: $full-width;
+  margin: 8px auto 16px;
+  justify-content: center;
+}
+
+.review_col {
+  width: $full-width;
+}
+
+.client_pic .LazyLoad img {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.client_pic .LazyLoad {
+  &:last-child {
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.review_col h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $blue-color;
+  font-weight: bold;
+}
+
+.review_col h3 span {
+  font-weight: normal;
+  color: $dark-gray;
+}
+
+.invite_btn {
+  margin: 10px 0 17px;
+}
+
+.invite_preview-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}

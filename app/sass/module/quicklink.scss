@@ -1,0 +1,48 @@
+@import '../../sass/style.scss';
+
+.quick_links_preview {
+  @include home-left-box;
+  min-height: 154px;
+  height: 154px;
+}
+
+.quick_link_col {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 95px;
+  margin: 10px 0 0;
+}
+
+.quick_link_col a {
+  margin: 0 0 8px;
+  padding: 0 0 0 24px;
+  font-size: 13px;
+  line-height: 16px;
+  background-image: url("../../images/ic_link.svg");
+  background-position: left center;
+}
+
+.file_upload_col {
+  margin: 40px 0 0;
+  @include text-center;
+}
+
+.file_count {
+  background-image: url("../../images/ic_folder.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: $blue-color;
+  font-size: 24px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 24px;
+  padding: 15px 19px 10px;
+  width: 64px;
+}
+
+.view-all_link {
+  @include text-center;
+  margin: 24px 0 0;
+}

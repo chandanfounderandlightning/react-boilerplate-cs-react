@@ -1,8 +1,10 @@
 @import '/_breakpoints.scss';
 
 $base-color: #212121;
+$dark-gray: #424242;
 $blue-color: #0d47a1;
 $white-color: #fff;
+$light-gray: #8192aa;
 $base-font: 14px;
 $margin-none: 0;
 $full-width: 100%;
@@ -25,6 +27,35 @@ $full-width: 100%;
   margin: 0;
 }
 
+@mixin btn {
+  background-color: $blue-color;
+  padding: 4px 8px 3px;
+  color: $white-color;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+@mixin home-left-box {
+  max-width: 246px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  padding: 17px;
+  position: relative;
+  margin: 0 0 16px 0;
+}
+
+@mixin small_box_heading {
+  color: $light-gray;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
 ul {
   @include basic_ul_style;
 }
@@ -35,17 +66,17 @@ ul {
   background-size: cover;
 }
 
-a {
-  text-decoration: none;
-  color: $blue-color;
-  outline: none;
-}
-
 body {
   background-color: darken($white-color, 3.5%);
   font-size: $base-font;
   color: $base-color;
   @include basic-font;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-color;
+  outline: none;
 }
 
 .container {
@@ -67,8 +98,22 @@ body {
   }
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: $margin-none;
+}
+
+p,
+label {
+  @include basic-font;
+}
+
+.btn {
+  @include btn;
 }
 
 .header_navigation_row {
@@ -76,4 +121,8 @@ h1 {
   width: $full-width;
   height: 54px;
   justify-content: space-between;
+}
+
+.main_content_section {
+  margin: 15px 0 0;
 }

@@ -1,0 +1,49 @@
+@import '../../sass/style.scss';
+
+.main_content_left_column {
+  width: 505px;
+  @include flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.executive_summary_preview {
+  @include home-left-box;
+  max-height: 234px;
+  min-height: 234px;
+}
+
+.small_box_heading {
+  @include small_box_heading;
+}
+
+.small-box-paragraph {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 16px 0;
+}
+
+.summary_links {
+  @include flex;
+  flex-direction: column;
+}
+
+.summary_links a {
+  margin-bottom: 4px;
+  padding: 0 0 0 24px;
+  background-image: url('../../images/ic_link.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.edit_box {
+  @include flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edit_icon {
+  cursor: pointer;
+  position: relative;
+  top: -5px
+}

@@ -21,7 +21,7 @@ class RightNavigation extends React.PureComponent {
         <Link href="!#" to="">
           <span className="nav_icon">
             <LazyLoad>
-              <img src={`../../${item.path}`} alt="Home" />
+              <img src={require(`../../${item.path}`)} alt="Home" />
             </LazyLoad>
           </span>
           <div className="nav_name">{item.name}</div>
