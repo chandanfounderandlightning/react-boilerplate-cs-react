@@ -5,6 +5,10 @@
   @include flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: $phoneLandscapeDown) {
+    display: none;
+  }
 }
 
 .executive_summary_preview {

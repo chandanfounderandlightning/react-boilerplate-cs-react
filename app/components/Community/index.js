@@ -1,6 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazy-load';
 import { Link } from 'react-router-dom';
+import memberpic from 'images/Bitmap4.png';
 import '../../sass/module/executivesummary.scss';
 import '../../sass/module/community.scss';
 import Data from '../../components/Community/CommunityContent';
@@ -34,19 +35,19 @@ class Community extends React.Component {
                 </h3>
                 <span className="client_pic">
                   <LazyLoad>
-                    <img src={item.memberpic} alt="" />
+                    <img src={memberpic} alt="MemberImage" />
                   </LazyLoad>
                   <LazyLoad>
-                    <img src={item.memberpic} alt="" />
+                    <img src={memberpic} alt="MemberImage" />
                   </LazyLoad>
                   <LazyLoad>
-                    <img src={item.memberpic} alt="" />
+                    <img src={memberpic} alt="MemberImage" />
                   </LazyLoad>
                   <LazyLoad>
-                    <img src={item.memberpic} alt="" />
+                    <img src={memberpic} alt="MemberImage" />
                   </LazyLoad>
                   <LazyLoad>
-                    <img src={item.memberpic} alt="" />
+                    <img src={memberpic} alt="MemberImage" />
                   </LazyLoad>
                 </span>
                 <h3>
