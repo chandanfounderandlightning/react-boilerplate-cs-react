@@ -9,25 +9,36 @@ import ResponsiveMenu from 'react-responsive-navbar';
 import LazyLoad from 'react-lazy-load';
 import { Link } from 'react-router-dom';
 import '../../sass/module/rightnavigation.scss';
-import navList from '../../components/RightNavigation/Content';
+import navList from './Content';
+import home from '../../images/ic_home.svg';
+import anylytics from '../../images/ic_poll.svg';
+import chat from '../../images/ic_chat.svg';
+import notification from '../../images/ic_notifications.svg';
+import search from '../../images/ic_search.svg';
+
+const hImg = [home, anylytics, chat, notification, search];
+
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
 /* eslint-disable react/prefer-stateless-function */
 class RightNavigation extends React.PureComponent {
   navigation(listData) {
-    return listData.map(item => (
-      <li key={item.id}>
-        <Link href="!#" to="">
-          <span className="nav_icon">
-            <LazyLoad>
-              <img src={require(`../../${item.path}`)} alt="Home" />
-            </LazyLoad>
-          </span>
-          <div className="nav_name">{item.name}</div>
-        </Link>
-      </li>
-    ));
+    return listData.map((item, index) => {
+      const path = hImg[index];
+      return (
+        <li key={item.id}>
+          <Link href="!#" to="">
+            <span className="nav_icon">
+              <LazyLoad>
+                <img src={path} alt={item.name} />
+              </LazyLoad>
+            </span>
+            <div className="nav_name">{item.name}</div>
+          </Link>
+        </li>
+      );
+    });
   }
 
   render() {
