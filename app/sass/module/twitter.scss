@@ -1,0 +1,42 @@
+@import '../../sass/style.scss';
+
+.twitter-feed-section-dashboard {
+  width: $full-width;
+  @include flex;
+  background-color: $white-color;
+  padding: 17px;
+  box-shadow: $box-shadow;
+}
+
+.twitter_row {
+  width: $full-width;
+}
+
+.twitter_content_column {
+  @include flex;
+  @include text_center;
+  width: $full-width;
+  justify-content: center;
+  flex-direction: column;
+  margin: 16px 0 0;
+}
+
+.twitter_content_column .small_bold_heading {
+  max-width: 352px;
+  margin: 0 auto;
+}
+
+.twitter_content_column p {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 8px 0 0;
+}
+
+.add_twitter_feed {
+  margin: 24px 0;
+}
+
+.bottom_heading .small_bold_heading {
+  font-weight: normal;
+  max-width: 312px;
+}

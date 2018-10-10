@@ -8,6 +8,7 @@ $light-gray: #8192aa;
 $base-font: 14px;
 $margin-none: 0;
 $full-width: 100%;
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
 
 @mixin basic-font {
   font-family: 'Mada', sans-serif;
@@ -43,7 +44,7 @@ $full-width: 100%;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: $box-shadow;
   padding: 17px;
   position: relative;
   margin: 0 0 14px 0;
@@ -64,6 +65,13 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin small_bold_heading {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $dark-gray;
 }
 
 body {
@@ -125,4 +133,8 @@ label {
 
 .main_content_section {
   margin: 15px 0 0;
+}
+
+.small_bold_heading {
+  @include small_bold_heading;
 }
