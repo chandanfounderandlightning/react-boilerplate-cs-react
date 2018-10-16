@@ -14,6 +14,7 @@ import Community from '../../components/Community';
 import QuickLinks from '../../components/QuickLinks';
 import FileViewer from '../../components/FileViewer';
 import Twitter from '../../components/Twitter';
+import Addpostbox from '../../components/Addpostbox';
 
 /* eslint-disable react/prefer-stateless-function */
 export class MainContent extends React.Component {
@@ -27,6 +28,9 @@ export class MainContent extends React.Component {
             <QuickLinks />
             <FileViewer />
             <Twitter />
+          </div>
+          <div className="main_content_right_column">
+            <Addpostbox />
           </div>
         </div>
       </section>

@@ -1,0 +1,61 @@
+@import '../../sass/style.scss';
+
+.main_content_right_column {
+  max-width: 648px;
+  padding: 0 14px;
+  width: $full-width;
+}
+
+.shareupdate_wrap {
+  background-color: $white-color;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  padding: 17px 17px 0 17px;
+  border: 1px solid #E0E0E0;
+  border-bottom: 2px solid $blue-color;
+  @include flex;
+  position: relative;
+}
+
+.pro_pic_wrap {
+  background: url('../../images/feed_pic.png') no-repeat center center;
+  background-size: contain;
+  height: 32px;
+  width: 32px;
+  border-radius: 2px;
+  margin: 0 12px 0 0;
+}
+
+.shareupdate_wrap textarea {
+  resize: none;
+  width: $full-width;
+  outline: none;
+  @include basic-font;
+  font-size: 16px;
+  padding: 6px 75px 0 0;
+}
+
+.shareupdate_wrap textarea::-webkit-input-placeholder,
+.shareupdate_wrap textarea::-moz-placeholder,
+.shareupdate_wrap textarea::-ms-input-placeholder {
+  color: #000;
+}
+
+.post_submit {
+  position: absolute;
+  right: 20px;
+  margin-bottom: 13px;
+  margin-top: -4px;
+}
+
+.post_submit .feed_post_btn {
+  display: inline-block;
+  line-height: 16px;
+  padding: 12px 16px 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  @include basic-font;
+}

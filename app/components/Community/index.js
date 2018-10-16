@@ -18,7 +18,7 @@ class Community extends React.Component {
   }
   render() {
     return (
-      <div className="executive_summary_preview">
+      <div className="executive_summary_preview margin_none">
         <Link className="invite_preview-link" href="!#" to="">
           &nbsp;
         </Link>

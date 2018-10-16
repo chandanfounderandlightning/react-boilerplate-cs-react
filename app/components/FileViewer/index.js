@@ -14,7 +14,7 @@ import '../../sass/module/quicklink.scss';
 class FileViewer extends React.Component {
   render() {
     return (
-      <div className="quick_links_preview">
+      <div className="quick_links_preview margin_none">
         <div className="quick_row">
           <Link className="invite_preview-link" href="!#" to="">
             &nbsp;

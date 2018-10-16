@@ -1,9 +1,8 @@
 @import '../../sass/style.scss';
 
 .main_content_left_column {
-  width: 505px;
+  width: 483px;
   @include flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $phoneLandscapeDown) {
@@ -16,6 +15,10 @@
   max-height: 234px;
   min-height: 234px;
 }
+
+.executive_summary_preview:last-child {
+    margin-right: 0;
+  }
 
 .small_box_heading {
   @include small_box_heading;
